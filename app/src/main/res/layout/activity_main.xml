@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.orlandoperdana.bizapp.MainActivity"
+    android:weightSum="1">
+
+    <ImageView
+        android:id="@+id/imageview"
+        android:src="@drawable/cot"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:textColor="@android:color/white"
+        android:textSize="24sp"
+        android:scaleType="centerCrop"
+        android:layout_weight="0.11" />
+
+    <TextView
+        android:id="@+id/first"
+        android:text="Center Of Technology"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:background="#0066FF"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:layout_below="@+id/imageview"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/second"
+        android:layout_alignParentLeft="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Center of Technology adalah mengoptimalkan peran Politeknik Pos Indonesia sebagai lembaga pendidikan tinggi vokasional yang konsen pada bidang Logistik dan Supply Chain Management"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/web"
+            android:src="@drawable/address"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/second"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"/>
+
+        <TextView
+        android:id="@+id/second"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jalan Sariasih No 54 Sarijadi Bandung"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/first"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+    <ImageView
+        android:id="@+id/web"
+        android:src="@drawable/web"
+        android:layout_width="20dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/third"
+        android:layout_alignParentLeft="true"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:id="@+id/third"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="www.centeroftechnology.com"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/second"/>
+
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/web"
+            android:src="@drawable/telepon"
+            android:layout_width="20dp"
+            android:layout_height="match_parent"
+            android:layout_toLeftOf="@+id/fourth"
+            android:layout_alignParentLeft="true"
+            android:paddingLeft="8dp"
+            android:paddingTop="14dp"/>
+
+    <TextView
+        android:id="@+id/fourth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="081370180940"
+        android:paddingLeft="8dp"
+        android:paddingTop="8dp"
+        android:layout_below="@+id/third"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+    <Button
+        android:id="@+id/btnReg"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:text="Daftar"
+        android:onClick="register"
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/fourth"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</LinearLayout>
